@@ -1,13 +1,383 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Caveat&family=Metrophobic&family=Noto+Sans&family=Press+Start+2P&family=Syncopate&display=swap');
+
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  --nav-back:rgb(150, 196, 240);
+  --but:rgb(150, 196, 240);
+  --red: rgb(161, 72, 56);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header, nav, main, footer {
+  min-width: 270px;
+}
+
+
+/* ------------------- */
+/* HEADER */
+/* ------------------- */
+
+
+header {
+  font-family: 'Caveat', cursive;
+  min-width: 300px;
+}
+
+h1 {
+  margin: 0;
+  color: var(--red);
+  transform: rotate(-5deg);
+}
+
+header img {
+  position: relative;
+  top: 3.6rem;
+  height: auto;
+  opacity: .1;
+}
+
+
+/* ------------------- */
+/* MAIN */
+/* ------------------- */
+
+
+main {
+  max-width: 43rem;
+  margin: 0 auto;
+  border: 1px var(--nav-back) dashed;
+  border-bottom: none;
+}
+
+.list-2, .list-1 {
+  max-width: 9rem;
+  margin: 0 auto;
+  margin-top: .8rem;
+}
+
+.list-1 button:hover {
+  cursor: initial;
+}
+
+
+/* dod wear */
+
+
+.option-white, .option-black, .option-design {
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--nav-back);
+  border-radius: 11px;
+  margin: .5rem 0;
+  padding: .3rem;
+}
+
+.option-design {
+  background-color: white;
+  border: none;
+  color: var(--nav-back);
+  padding: 0;
+  margin-bottom: .7rem;
+}
+
+.option-white {
+  background-color: white;
+  margin-right: .3rem;
+  margin-left: .2rem;
+}
+
+.option-black {
+  background-color: black;
+  margin-right: .1rem;
+}
+
+.option-design span {
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+/* description */
+
+
+.description__cont {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: center;
+
+  font-size: .8rem;
+  width: 100%;
+  height: 6rem;
+  margin-bottom: .5rem;
+
+}
+
+.description__cont span {
+  font-size: 2rem;
+  text-align: right;
+  margin-top: .3rem;
+  margin-right: 2rem;
+  width: 25%;
+  color: var(--nav-back);
+}
+
+.description__cont p {
+  font-family: 'Noto Sans', sans-serif;
+  width: 75%;
+  margin-right: 5rem;
+  text-align: left;
+}
+
+
+/* img  */
+
+
+.images, .images-bc, .images-pdec {
+  display: block;
+}
+
+.img__cont {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img-pdec__cont {
+  overflow: scroll;
+  margin: 4rem;
+}
+
+.img-pdec2__cont {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.images-pdec2 {
+  width: 300px;
+}
+
+.images {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.images-bc {
+  width: 23rem;
+  margin: .5rem;
+  margin: .5rem auto;
+}
+
+.images-pdec {
+  height: 300px;
+}
+
+/* ------------------- */
+/* FOOTER */
+/* ------------------- */
+
+footer {
+  position: relative;
+  width: 30%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-top: black 1px dashed;
+  font-size: .6rem;
+}
+
+/* react logo */
+
+.made-in {
+  margin-top: .9rem;
+  font-size: .6rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  color: var(--nav-back);
+  letter-spacing: .1rem;
+  
+}
+
+.App-logo {
+  position: relative;
+  top: -.4rem;
+  height: 2rem;
+  pointer-events: none;
+  color: var(--nav-back);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ------------------- */
+/* MQ */
+/* ------------------- */
+
+
+@media only screen and (max-width: 730px) {
+  .img-pdec__cont {
+      margin: 3rem auto;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .description__cont span {
+      margin-right: 2rem;
+      width: 15%;
+  }
+  
+  .description__cont p {
+      width: 85%;
+      margin-right: 5rem;
+  }
+  
+}
+
+@media only screen and (max-width: 510px) {
+  .description__cont span {
+      margin: 1rem;
+      margin-top: .3rem;
+      width: 10%;
+  }
+  
+  .description__cont p {
+      width: 90%;
+      margin-right: 1rem;
+  }
+
+  .images {
+      max-width: 30rem;
+      width: 100%;
+      height: auto;
+  }
+  
+  .images-bc {
+      max-width: 23rem;
+      width: 100%;
+      height: auto;
+  }
+
+  .img__cont {
+      width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 470px) {
+  .images-bc {
+      width: 80%;
+  }
+}
+
+@media only screen and (max-width: 440px){
+
+  .description__cont {
+      height: 7rem;
+  }
+
+  .images-pdec2 {
+      width: 70%;
+  }
+
+  footer {
+      width: 40%;
+      font-size: .5rem;
+      margin-bottom: 0;
+  }
+
+  .made-in {
+    font-size: .5rem;
+  }
+  
+  .App-logo {
+    height: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 380px){
+
+  .nav-up__cont {
+      width: 100%;
+  }
+
+  .mq-fix-380 {
+      display: none;
+  }
+
+  .nav-up--main {
+    text-align: left;
+    margin-left: 1rem;
+    width: 80%;
+  }
+
+  .nav-up--icon {
+      justify-self: start;
+      width: 20%;
+  }
+
+  .description__cont {
+      height: 8rem;
+  }
+
+  .list-2 {
+      margin-left: 2.7rem;
+  }
+
+  .list-1 {
+      margin-left: 0;
+  }
+
+  .images-pdec {
+      height: 250px;
+  }
+
+}
+
+@media only screen and (max-width: 340px){
+
+  .nav-up--main {
+      font-size: .8rem;
+      width: 90%;
+      font-size: .7rem;
+  }
+
+  .nav-up--icon {
+      margin-right: .4rem;
+      width: 10%;
+  }
+
+  button#nav-up--but {
+      padding: 0;
+  }
+
+  .description__cont {
+      font-size: .7rem;
+  }
+
+  header img {
+      width: 100%;
+  }
+
+  .images-pdec {
+      height: 200px;
+  }
 }

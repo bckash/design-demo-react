@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+
+import useNextTitle from "./components/useNextTitle";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Dod from "./components/Dod";
+import Analogia from "./components/Analogia";
+import Solo from "./components/Solo";
+import Brg from "./components/Brg";
+import BekartCzwartek from "./components/BekartCzwartek";
+import Wfd from "./components/Wfd";
+import Footer from "./components/Footer";
+import Wl from "./components/Wl";
+
 
 function App() {
+
+  const { val, nextTitle } = useNextTitle();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Nav { ...{ val, nextTitle }} />
+        <main>
+          {val === 0 && <Dod />}
+          {val === 1 && <Analogia />}
+          {val === 2 && <Solo />}
+          {val === 3 && <Brg />}
+          {val === 4 && <BekartCzwartek />}
+          {val === 5 && <Wfd />}
+          {val === 6 && <Wl />}
+        </main>
+      <Footer />
     </div>
   );
 }

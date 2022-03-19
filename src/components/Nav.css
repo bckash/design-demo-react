@@ -1,0 +1,64 @@
+
+nav {
+    max-width: 20rem ;
+    margin: 0 auto;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--nav-back);
+    box-shadow: 1px 1px 40px rgba(145, 162, 187, 0.486);
+}
+
+.nav-up__cont {
+    display: flex;
+    align-items: center;
+}
+
+#nav-up--but {
+    border: none;
+    color: rgb(151, 40, 161);
+}
+
+/* menu titles */
+
+
+#analogia, #pdec, #brg, #bc, #wfd {
+    display: none;
+}
+
+.nav-up--main {
+    font-size: .8rem;
+    width: 12rem;
+}
+
+.nav-up--main, footer {
+    font-family: 'Press Start 2P', cursive;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    margin: .5rem 0;
+    padding: .3rem;
+}
+
+li {
+    display: inline-block;
+}
+
+/* chevron */
+
+
+.nav-up--icon {
+    margin-left: 2.4rem;
+}
+
+
+/* slider class */
+
+.active {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
