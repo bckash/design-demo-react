@@ -196,9 +196,9 @@ footer {
 
 .made-in {
   margin-top: .9rem;
-  font-size: .6rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-transform: uppercase;
+  font-size: .7rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   color: var(--nav-back);
   letter-spacing: .1rem;
   
